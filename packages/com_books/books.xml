@@ -39,9 +39,9 @@
 		<filename>index.html</filename>
 	</media>
 	<administration>
-		<menu img="../media/com_know/images/menu/book.png">com_books</menu>
+		<menu img="../media/com_books/images/menu/book.png">com_books</menu>
 		<submenu>
-			<menu link="option=com_books" view="books" img="../media/com_know/images/menu/book.png" alt="Books/Books">com_books</menu>
+			<menu link="option=com_books" view="books" img="../media/com_books/images/menu/book.png" alt="Books/Books">com_books</menu>
 			<menu link="option=com_categories&amp;extension=com_books" view="categories" img="class:category" alt="Books/Categories">com_books_categories</menu>
 		</submenu>
 		<files folder="admin">
