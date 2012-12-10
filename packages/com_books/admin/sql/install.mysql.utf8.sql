@@ -1,0 +1,26 @@
+DROP TABLE IF EXISTS `#__books`;
+CREATE TABLE `#__books` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `catid` int(10) unsigned NOT NULL DEFAULT '0',
+  `title` varchar(100) NOT NULL DEFAULT '',
+  `alias` varchar(100) NOT NULL DEFAULT '',
+  `author` varchar(40) NOT NULL DEFAULT '',
+  `isbn` varchar(20) NOT NULL DEFAULT '',
+  `pages` varchar(10) NOT NULL DEFAULT '',
+  `year` varchar(4) NOT NULL DEFAULT '',
+  `editor` varchar(20) NOT NULL DEFAULT '',
+  `link` varchar(255) NOT NULL DEFAULT '',
+  `image` varchar(255) NOT NULL DEFAULT '',
+  `description` mediumtext NOT NULL,
+  `ordering` int(11) NOT NULL DEFAULT '0',
+  `published` tinyint(3) NOT NULL DEFAULT '0',
+  `publish_up` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `publish_down` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `created` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `created_by` int(10) NOT NULL DEFAULT '0',
+  `modified` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `modified_by` int(10) NOT NULL DEFAULT '0',
+  `checked_out` int(10) unsigned NOT NULL DEFAULT '0',
+  `checked_out_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`id`,`modified_by`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

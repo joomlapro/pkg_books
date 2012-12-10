@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="package" version="2.5">
+	<name>Books Package</name>
+	<author>Bruno Batista</author>
+	<creationDate>December 2012</creationDate>
+	<copyright>Copyright (C) 2012 AtomTech, Inc. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>bruno@atomtech.com.br</authorEmail>
+	<authorUrl>http://www.atomtech.com.br</authorUrl>
+	<version>2.5.0</version>
+	<description>Books package to combine multiple extensions</description>
+	<packagename>books</packagename>
+	<url>http://www.atomtech.com.br</url>
+	<packager>Books Package Team</packager>
+	<packagerurl>http://www.atomtech.com.br</packagerurl>
+	<update>http://www.atomtech.com.br/update</update>
+	<files folder="packages">
+		<file type="component" id="books">com_books</file>
+	</files>
+</extension>

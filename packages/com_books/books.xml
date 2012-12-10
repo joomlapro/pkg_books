@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>com_books</name>
+	<author>Bruno Batista</author>
+	<creationDate>01/05/2012</creationDate>
+	<copyright>(C) AtomTech, Inc. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>bruno@atomtech.com.br</authorEmail>
+	<authorUrl>http://www.atomtech.com.br</authorUrl>
+	<version>2.5.0</version>
+	<description>COM_BOOKS_XML_DESCRIPTION</description>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<files folder="site">
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+		<filename>books.php</filename>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>router.php</filename>
+	</files>
+	<languages folder="site">
+		<language tag="pt-BR">language/pt-BR.com_books.ini</language>
+	</languages>
+	<administration>
+		<menu img="class:books">com_books</menu>
+		<submenu>
+			<menu link="option=com_books" view="books" img="class:books" alt="Books/Books">com_books</menu>
+			<menu link="option=com_categories&amp;extension=com_books" view="categories" img="class:books-cat" alt="Books/Categories">com_books_categories</menu>
+		</submenu>
+		<files folder="admin">
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>language</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<filename>books.php</filename>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+		</files>
+		<languages folder="admin">
+			<language tag="pt-BR">language/pt-BR.com_books.ini</language>
+			<language tag="pt-BR">language/pt-BR.com_books.sys.ini</language>
+		</languages>
+	</administration>
+</extension>
